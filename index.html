@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Films</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo-nav">
+                <button class="img-nav"><span>M</span><span>f</span></button>
+            </div>
+            <div class="burger-container">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="items-container">
+                <ul class="items-nav">
+                    <li>
+                        <a class="lançamentos" href="#card">Lançamentos <i class="fa-solid fa-angle-left fa-rotate-270"></i></a>
+                        <ul class="select">
+                            <li><a href="#card">Filmes</a></li>
+                            <li><a href="#series">Series</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#FilmesMais">filmes</a>
+                    </li>
+                    <li>
+                        <a href="#series">series</a>
+                    </li>
+                    <li>
+                        <a href="#assinar">assinar</a>
+                    </li>
+                    
+                    <li>
+                        <a onclick="LiberaForm()" class="entrar-nav">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-img-inicio">
+    </div>
+    <section class="open-container">
+        <img class="logo-open" src="https://www.oppenheimerfilme.com.br/_nuxt/images/title-logo-orange.6ed4d9.png" alt="">
+        <div class="trailer-open">
+            <button class="trailer-btn"><i class="fa-solid fa-play"></i> Trailer</button>
+            <span class="span-trailer"></span>
+            <button class="mais-btn">+</button>
+        </div>
+        <div class="sobre-open">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos explicabo error sunt fugiat corrupti? Nesciunt voluptate ut facilis, quae impedit,
+            </p>
+            <p>Lançamento de 2023.</p>
+            <button class="assine-open">Assine já</button>
+        </div>
+    </section>
+
+    <div class="barbie">
+        <section class="container-barbie">
+            <div class="barbie-container-img">
+            <img class="barbie-img"  alt="">
+            <div class="content-barbie">
+                <h1>assista barbie em 4k</h1>
+                <button><i class="fa-solid fa-play"></i>  Assistir agora!</button>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="card" id="card">
+        <section class="card-container">
+            <article class="card-films">
+                <a href="">
+                <img class="films-img" src="https://proxy.olhardigital.com.br/wp-content/uploads/2023/06/homem-aranha-atraves-do-aranhaverso-1024x576.jpg" alt="">
+                
+                </a>
+                <div class="card-details">
+                    <h1>Homem-aranha Através do aranhaverso</h1>
+                     <span>EM 4K</span>
+                     <br>
+                     <button class="btn-ass" onclick="ass()">Assistir</button>
+                </div>
+            </article>
+
+            <article class="card-films">
+                <a href="">
+                <img class="films-img" src="https://pbs.twimg.com/media/F9svRoOW0AAl39l.jpg" alt="">
+                </a>
+                <div class="card-details">
+                    <h1>Five Nights at Freddy's - O pesadelo sem fim</h1>
+                     <span>EM 4K</span>
+                     <br>
+                     <button class="btn-ass" onclick="ass()">Assistir</button>
+                </div>
+            </article>
+
+            <article class="card-films">
+                <a href="">
+                <img class="films-img" src="https://uploads.metropoles.com/wp-content/uploads/2021/04/14124408/velozes-e-furiosos-9-1.jpg" alt="">
+                </a>
+                <div class="card-details">
+                    <h1>Velozes e furiosos 9</h1>
+                     <span>EM 4K</span>
+                     <br>
+                     <button class="btn-ass" onclick="ass()">Assistir</button>
+                </div>
+            </article>
+
+            <article class="card-films">
+                <a href="">
+                <img class="films-img" src="https://www.otempo.com.br/image/contentid/policy:1.2878850:1685473442/image-A-Freira-2-ganha-imagens-assustadoras.jpg?f=3x2&w=1224" alt="">
+                </a>
+                <div class="card-details">
+                    <h1>Freira 2</h1>
+                     <span>EM 4K</span>
+                     <br>
+                     <button class="btn-ass" onclick="ass()">Assistir</button>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <section class="filmes" id="series">
+        <a href="" data-duration="Assistir"><img class="filmes-imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYXKvggGZcxvF9DsrQG087vYtyDmXQ_dPLiZkXQj9eehd85MtLfMgC16xjq9sS4-zjyI&usqp=CAU" alt=""></a>
+        
+        <a href=""><img class="filmes-imgs" src="https://s2.glbimg.com/lip1rXjb7IfKWKhzwjKCCsKJcrA=/e.glbimg.com/og/ed/f/original/2017/08/17/game-of-thrones.jpg" alt=""></a>
+        <a href=""><img class="filmes-imgs" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d5a54cff89a7ab4b30722b8b9cd7e9ca964ff8ac9a37990d7d169d96c9693625._RI_TTW_.jpg" alt=""></a>
+        <a href=""><img class="filmes-imgs" src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CBAD19B1BDE4A61B70E351057F165BD1D0F42F2106E8712C476373E4D5EF2D25/scale?width=1200&aspectRatio=1.78&format=jpeg" alt=""></a>
+        <a href=""><img class="filmes-imgs" src="https://i.ytimg.com/vi/4vi6ZWe_3Yc/maxresdefault.jpg" alt=""></a>
+    </section>
+
+    <div class="conteudo" >
+        <div class="slider">
+            <div class="slide slide1">
+                <div class="captura">
+                    <button><h1>LA CASA DE PAPEL</h1></button>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="captura">
+                    <button><h1>round 6</h1></button>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="captura">
+                    <button><h1>The boys</h1></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="assistir" >
+    <div class="container-assistir">
+            <div class="block-tela">
+                <div class="tela-top">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <h1 class="titulo-tela">La casa de papel</h1>
+                    <button id="closeBtn" onclick="closeShow()"><i class="fa-solid fa-x"></i></button>
+                </div>
+                <div class="tela-center">
+                    <button><i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="tela-bottom">
+                    <div class="tela-tempo">
+                        <span class="tempo">00:00/50:00</span>
+                    </div><!--TEMPO-->
+                    <div class="tela-right">
+                    <select id="select">
+                        <option value="100p">100p</option>
+                        <option value="2400p">240p</option>
+                        <option value="740p">740p</option>
+                        <option value="1080p">1080p</option>
+                        <option value="2180p">2180p</option>
+                    </select>
+                    <div class="tela-cheia">
+                    <button><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    </div><!--TELA RIGHT-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="section-titulo" id="assinar">
+     <div class="titulo-h1">
+        <h1>por apenas</h1>
+     </div>
+     <div class="titulo-span">
+        <span>15,00r$</span>
+     </div>
+     <div class="titulo-h2">
+        <h2>por mês.</h2>
+     </div>
+     <div class="titulo-a">
+        <a href="">Assinar!</a>
+     </div>
+   </section>
+
+   <div class="card" >
+    <section class="card-container card-container2">
+        <article class="card-films" id="FilmesMais">
+            <a href="">
+            <img class="films-img" src="https://proxy.olhardigital.com.br/wp-content/uploads/2023/06/homem-aranha-atraves-do-aranhaverso-1024x576.jpg" alt="">
+            
+            </a>
+            <div class="card-details">
+                <h1>Homem-aranha Através do aranhaverso</h1>
+                 <span>EM 4K</span>
+                 <br>
+                 <button class="btn-ass" onclick="ass()">Assistir</button>
+            </div>
+        </article>
+        <article class="card-films">
+            <a href="">
+            <img class="films-img" src="https://proxy.olhardigital.com.br/wp-content/uploads/2023/06/homem-aranha-atraves-do-aranhaverso-1024x576.jpg" alt="">
+            
+            </a>
+            <div class="card-details">
+                <h1>Homem-aranha Através do aranhaverso</h1>
+                 <span>EM 4K</span>
+                 <br>
+                 <button class="btn-ass" onclick="ass()">Assistir</button>
+            </div>
+        </article>
+        <article class="card-films">
+            <a href="">
+            <img class="films-img" src="https://proxy.olhardigital.com.br/wp-content/uploads/2023/06/homem-aranha-atraves-do-aranhaverso-1024x576.jpg" alt="">
+            
+            </a>
+            <div class="card-details">
+                <h1>Homem-aranha Através do aranhaverso</h1>
+                 <span>EM 4K</span>
+                 <br>
+                 <button class="btn-ass" onclick="ass()">Assistir</button>
+            </div>
+        </article>
+        <article class="card-films">
+             <h1 class="films-img filmes-mais">É muito mais para você</h1>
+        </article>
+    </section>
+   </div>
+
+   <div class="stranger">
+    <section class="stanger-container">
+        <div class="titulo-grid">
+            <h1 class="stanger-titulo">STANGER THINGS</h1>
+             <button class="stanger-btn1">ver trailer</button>
+             <br>
+            <button class="stanger-btn2"><i class="fa-solid fa-plus"></i> temporadas</button>
+        </div>
+            <img class="stanger-img" src="https://i.pinimg.com/originals/fd/80/c3/fd80c38deb7c6fa7ac0c1e9f3b0d7ba7.png" alt="">
+    </section>
+   </div>
+
+   <footer>
+    <div class="footer-container">
+        <div class="footer-link-1">
+            <li>
+                <h1>Mega films</h1>
+            </li>
+            <li>
+                <a href="">sobre</a>
+            </li>
+            <li>
+                <a href="">blog</a>
+            </li>
+            <li>
+                <a href="">noticias</a>
+            </li>
+        </div>
+        <div class="footer-link-2">
+            <li>
+                <h1>Por dentro</h1>
+            </li>
+            <li>
+                <a href="">Filmes</a>
+            </li>
+            <li>
+                <a href="">series</a>
+            </li>
+            <li>
+                <a href="">trailer</a>
+            </li>
+        </div>
+        <div class="footer-link-2">
+            <li>
+                <h1>Por dentro</h1>
+            </li>
+            <li>
+                <a href="">Filmes</a>
+            </li>
+            <li>
+                <a href="">series</a>
+            </li>
+            <li>
+                <a href="">trailer</a>
+            </li>
+        </div>
+        <div class="footer-link-2">
+            <li>
+                <h1>Por dentro</h1>
+            </li>
+            <li>
+                <a href="">Filmes</a>
+            </li>
+            <li>
+                <a href="">series</a>
+            </li>
+            <li>
+                <a href="">trailer</a>
+            </li>
+        </div>
+    </div>
+    <div class="sociais">
+        <h1>Redes Sociais</h1>
+        <a href="https://github.com/raulcacula"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/raulcacula"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="details-footer">
+        <p class="copy-footer">&copy;raulcacula</p>
+    <div class="pt-footer">
+        <span>português-BR</span>
+        <img class="brasil-img" src="https://static.vecteezy.com/system/resources/previews/011/419/626/non_2x/brazil-flag-file-free-png.png" alt="">
+    </div>
+    </div>
+   </footer>
+
+   <div class="entrar">
+    <div class="log-container">
+        <div class="close">
+            <button onclick="closeFormShow()" class="close-form">X</button>
+        </div>
+
+        <div class="titulo-log">
+            <button class="img-nav"><span>M</span><span>f</span></button>
+            <h1 class="titulo-form">Digite seu Email</h1>
+        </div>
+
+        <!---FORM EMAIL-->
+
+        <div class="conta-log">
+            <div class="form-1">
+            <form action="">
+                <span>Começe pelo seu email</span>
+                <br>
+                <div class="form-cont">
+                <input type="email" placeholder="Email" id="email">
+                </div>
+                <p class="p-form">Após digita o email click na seta para continuar o processo.</p>
+            </form>
+            <span class="progresso">1/2</span>
+            </div>
+            <div class="seta-form">
+                <button onclick="avançoFnc()" id="avanço1">></button>
+                </div>
+        </div>
+
+        <!--FORM SENHA-->
+    
+        <div class="conta-log2">
+            <form class="form-2" action="">
+                <span>Coloque a senha do usuario</span>
+                <br>
+                <div class="form-cont">
+                <input type="password" placeholder="senha" id="senha">
+                </div>
+                <p class="p-form">Após digita a senha click na seta para continuar o processo.</p>
+            </form>
+            <span class="progresso">2/2</span>
+            <div class="seta-form">
+            <button onclick="avançoFnc2()" id="avanço2">Finish</button>
+            </div>
+        </div>
+
+        <!--FORM CHECK-->
+
+        <div class="conta-log3">
+            <form action="">
+                <div class="finish-form">
+                    <div class="titulo-log3">
+                    <span class="check-form"><i class="fa-solid fa-check"></i></span>
+                    <br>
+                     <span class="check-titulo">Bem-vindo de volta</span>
+                     <br>
+                     <span class="check-titulo">Anônimo</span>
+                    </div>
+                    <div class="pipe-block">
+                    <div class="pipe"></div>
+                    <div class="pipe-2"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+   </div>
+
+   <div class="loader-mf">
+    <button class="img-nav loader-logo"><span class="loader-span1">M</span><span class="loader-span2">f</span></button>
+   </div>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</body>
+</html>
